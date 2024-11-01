@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block titulo %} Gestion Clientes {% endblock %}
+
+{% block cuerpo %}
+  <h1>Gestionar Clientes David Salazar</h1>
+{% for m in Losclientes %}
+
+<li>{{m.Id_Cliente}}.-.-.-{{m.Nombres}}.-.-.-{{m.Apellidos}}.-.-.-{{m.Direccion}}.-.-.-{{m.Fecha_Nac}}.-.-.-{{m.Edad}}.-.-.-{{m.Telefono}}</li>
+
+{% endfor %}
+
+
+{% endblock %}
